@@ -151,20 +151,6 @@ export const config: VendureConfig = {
         DefaultJobQueuePlugin,
         DefaultSearchPlugin,
         EmailPlugin.init({
-             /**
-             * a decommenter si devMode set false
-             */
-            // transport: {
-            //     type: 'smtp',
-            //     host: 'smtp.gmail.com',
-            //     port: 465,
-            //     logging: true,
-            //     auth: {
-            //         user: `marino.oniriquefactory@gmail.com`,
-            //         pass: `568OUYtvf*`,
-            //     },
-            //     debug: true,
-            // },
             devMode: true,
             outputPath: path.join(__dirname, '../static/email/test-emails'),
             route: 'mailbox',
